@@ -7,4 +7,4 @@ def hello_world():
 
 @app.route('/')
 def flying_dutchman():
-    return 'tu tu du du max ver5tappen'
+    return 'flying dutchman'
