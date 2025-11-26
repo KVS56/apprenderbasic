@@ -4,3 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def flying_dutchman():
     return 'flying dutchman'
+
+@app.route('/sister')
+def sheistywearer():
+    return 'aishwaya is my sister and she loves to commit CRIMES that are ILLEGAL because she is EVIL and a BAD person. also she is cute.'
