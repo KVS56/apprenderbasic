@@ -10,7 +10,7 @@ def get_unix_time():
     # Get current UTC datetime object
     now_utc = datetime.utcnow()
     unix_timestamp_years = now_utc.timestamp()
-    return  "unix_time_seconds": unix_timestamp_seconds
+    return  "unix_time_seconds": unix_timestamp_years
     
 
 @app.route('/sister')
