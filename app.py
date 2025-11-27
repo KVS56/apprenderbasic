@@ -6,11 +6,6 @@ app = Flask(__name__)
 def flying_dutchman():
     return 'flying finn'
     x = input('what is the current year?')
-def get_unix_time():
-    # Get current UTC datetime object
-    now_utc = datetime.utcnow()
-    unix_timestamp_years = now_utc.timestamp()
-    return  "unixtime:" unix_timestamp_years
     
 
 @app.route('/sister')
