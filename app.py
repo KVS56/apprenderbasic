@@ -6,6 +6,7 @@ app = Flask(__name__)
 def flying_dutchman():
     return 'flying finn'
     x = input('what is the current year?')
+    return 'the current year is', x
     
 
 @app.route('/sister')
