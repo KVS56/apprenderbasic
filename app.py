@@ -4,9 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def flying_dutchman():
-    return 'flying finn'
-    x = input('what is the current year?')
-    return 'the current year is', x
+    return render_template('index.html')
     
 
 @app.route('/sister')
