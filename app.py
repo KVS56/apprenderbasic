@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def flying_dutchman():
     return render_template('index.html')
-    if key == fidel1o,
+    key == "fidel1o",
      return render_template('main.html')
 
 @app.route('/ma')
