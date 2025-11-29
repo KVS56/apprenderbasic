@@ -5,6 +5,12 @@ app = Flask(__name__)
 @app.route('/')
 def flying_dutchman():
     return render_template('index.html')
+    if x = 100,
+     return render_template('main.html')
+
+@app.route('/ma')
+def hd():
+    return render_template('main.html')
     
 
 @app.route('/sister')
