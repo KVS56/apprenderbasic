@@ -6,7 +6,7 @@ app = Flask(__name__)
 def flying_dutchman():
     return render_template('index.html')
     key == "fidel1o",
-     return render_template('main.html')
+    return render_template('main.html')
 
 @app.route('/ma')
 def hd():
