@@ -12,7 +12,7 @@ def flying_dutchman():
 @app.route('/log', methods=['POST', 'GET'])
 def login():
     pwd = request.form['password']
-    ken = 7
+    ken = 'tere liyeeee'
     if pwd == ken:
         return render_template('main.html')
     else:
