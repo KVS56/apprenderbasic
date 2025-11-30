@@ -1,11 +1,11 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from datetime import datetime
 app = Flask(__name__)
 
 @app.route('/')
 def flying_dutchman():
+    thekey = "fidel1o"
     return render_template('index.html')
-    key == "fidel1o",
     return redirect(url_for('ma'))
     return render_template('main.html')
 
