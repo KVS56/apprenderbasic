@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head><title>secret page!!!</title></head>
+  <head><title>secret page!!!</title>
+    
+  <style>
+    /* CSS taken from admane.in */
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Global Styles */
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Fira Mono', monospace;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .hero .heading {
+      /* Typewriter-style effect on large screens; allow wrapping on mobile */
+      display: inline-block;
+      border-right: .15em solid #e0e0e0;
+      letter-spacing: .15em;
+      font-size: 2.5em;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
+      text-align: center;
+      width: 100%;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #e0e0e0; }
+    }
+    /* On mobile, allow the heading to wrap if needed */
+    @media (max-width: 600px) {
+      .hero .heading {
+        font-size: 1.8em;
+        white-space: normal;
+      }
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    .boring {
+      display: inline-block;
+      animation: pulse 1s infinite alternate;
+      color: #ff4081;
+      font-weight: bold;
+    }
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+    .hero a.linkedin {
+      display: inline-flex;
+      align-items: center;
+      color: #e0e0e0;
+      border: 1px solid #e0e0e0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+    .hero a.linkedin:hover {
+      background: #e0e0e0;
+      color: #121212;
+    }
+    .hero a.linkedin svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+  </style></head>
 <body>
+<div class="container"><section class="hero"><div class="heading">welcome to agartha</div></section></div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
 
 </body>
 </html>
