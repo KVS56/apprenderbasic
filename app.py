@@ -2,11 +2,10 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 from datetime import datetime
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def flying_dutchman():
     return render_template('index.html')
     
-@app.route('/', methods=['POST', 'GET'])
 def login():
     pwd = request.form['password']
     key = 'fidel1o'
