@@ -6,7 +6,7 @@ app = Flask(__name__)
 def flying_dutchman():
     return render_template('index.html')
 
-@app.route('/palm')
+@app.route('/palm', methods=['POST','GET'])
 def login():
     pwd = request.form['password']
     key = 'fidel1o'
