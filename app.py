@@ -15,6 +15,7 @@ def login():
         return render_template('main.html')
     else:
         return 'doubtfire? gambit declined'
+        return pwd
     
 
 @app.route('/sister')
