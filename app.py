@@ -9,9 +9,11 @@ def flying_dutchman():
     return redirect(url_for('ma'))
     return render_template('main.html')
 
+@app.route('/log')
 def login():
     ken = 7
-    return redirect(url_for('sister')
+    return redirect(url_for('sister'))
+
 
 @app.route('/ma')
 def hd():
