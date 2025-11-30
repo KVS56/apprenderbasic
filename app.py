@@ -6,14 +6,17 @@ app = Flask(__name__)
 def flying_dutchman():
     return render_template('index.html')
 
+pageloads = 0
+
 @app.route('/palm', methods=['POST','GET'])
 def login():
     pwd = request.form['password']
-    key = 'fidel1o'
-    if pwd == key:
+    thekey = 'fidel1o'
+    if pwd == thekey:
         return render_template('main.html')
+        global pageloads += 1
     else:
-        return 'doubtfire? gambit declined', pwd, 'is not correct'
+        return pwd
     
 
 @app.route('/sister')
