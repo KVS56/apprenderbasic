@@ -13,10 +13,11 @@ def login():
     pwd = request.form['password']
     thekey = 'fidel1o'
     if pwd == thekey:
-        return render_template('main.html')
-        global pageloads += 1
+        global pageloads
+        pageloads += 1
+        return render_template('main.html', views = pageloads)
     else:
-        return pwd
+        return no agartha for you
     
 
 @app.route('/sister')
