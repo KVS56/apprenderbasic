@@ -11,8 +11,12 @@ def flying_dutchman():
 
 @app.route('/log', methods=['POST', 'GET'])
 def login():
+    pwd = request.form['password']
     ken = 7
-    return render_template('main.html')
+    if pwd == thekey:
+        return render_template('main.html')
+    else:
+        return 'doubtfire? gambit declined'
     
 
 @app.route('/sister')
