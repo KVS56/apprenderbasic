@@ -4,18 +4,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def flying_dutchman():
-    thekey = "fidel1o"
     return render_template('index.html')
     
-@app.route('/log', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def login():
     pwd = request.form['password']
-    ken = 'jeenamuhal'
-    if pwd == ken:
+    key = 'fidel1o'
+    if pwd == key:
         return render_template('main.html')
     else:
-        return 'doubtfire? gambit declined'
-        return pwd
+        return 'doubtfire? gambit declined', pwd, 'is not correct'
     
 
 @app.route('/sister')
