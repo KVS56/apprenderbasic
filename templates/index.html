@@ -18,11 +18,17 @@
 </head>
 
 <body onload="generate()">
-  sebastian vettel you are the world champion
+  there are cathedrals everywhere for those with eyes to see
+  <form action="{{ url_for('login') }}" method="post">
+            <div id="user-input" class ="inline">{{ msg }}</div>
+            <input class="textbox" type="password" name="password" placeholder="Enter Password" required>
+            
+            <button class="btn" type="submit">Login</button>
+        </form>
     <div id="user-input" class="inline">
         <input type="text" 
                id="submit" 
-               placeholder="Captcha code" />
+               placeholder="The key" />
     </div>
 
     <div class="inline" onclick="generate()">
