@@ -17,7 +17,7 @@ def login():
         pageloads += 1
         return render_template('main.html', views = pageloads)
     else:
-        return no agartha for you
+        return 'no agartha for you'
     
 
 @app.route('/sister')
