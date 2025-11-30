@@ -13,7 +13,7 @@ def flying_dutchman():
 def login():
     pwd = request.form['password']
     ken = 7
-    if pwd == thekey:
+    if pwd == ken:
         return render_template('main.html')
     else:
         return 'doubtfire? gambit declined'
