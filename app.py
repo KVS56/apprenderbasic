@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from numpy import np
+from numpy import NumPy
 from datetime import datetime
 app = Flask(__name__)
 
