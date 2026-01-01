@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from numpy import np
 from datetime import datetime
 app = Flask(__name__)
 
@@ -23,3 +24,6 @@ def login():
 @app.route('/sister')
 def sheistywearer():
     return 'aishwaya is my sister and she loves to commit CRIMES that are ILLEGAL because she is EVIL and a BAD person. also she is cute.'
+
+
+@app.route('/impala')
