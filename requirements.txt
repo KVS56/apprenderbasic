@@ -1,2 +1,5 @@
 Flask
 Gunicorn
+NumPy
+random
+markovify
