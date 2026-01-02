@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from numpy import NumPy
+import numpy
 from datetime import datetime
+import markovify
 app = Flask(__name__)
+model = None
 
 @app.route('/', methods=['POST', 'GET'])
 def flying_dutchman():
@@ -27,3 +29,21 @@ def sheistywearer():
 
 
 @app.route('/impala')
+def ringdingdingding():
+    text = """
+    The sun rises in the east.
+    The sun sets in the west.
+    The moon is bright tonight.
+    The stars are shining.
+    Sebastian Vettel, you are the world champion.
+    Sebastian, DU BIST WELTMEISTER!
+    """
+    
+    text_model = markovify.Text(text)
+
+    new_sentence = text_model.make_sentence()
+    print(f"Generated sentence: {new_sentence}")
+
+
+    short_sentence = text_model.make_sentence(max_chars=20)
+    print(f"Generated short sentence: {short_sentence}")
