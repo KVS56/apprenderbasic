@@ -15,11 +15,14 @@ pageloads = 0
 def login():
     pwd = request.form['password']
     thekey = 'fidel1o'
+    werrr = 'she1iist'
     if pwd == thekey:
         global pageloads
         pageloads += 1
         return render_template('main.html', views = pageloads)
     else:
+        if pwd == werrr
+        return redirect(url_for("sister"))
         return 'no agartha for you'
     
 
@@ -30,7 +33,7 @@ def sheistywearer():
 
 @app.route('/impala')
 def ringdingdingding():
-    text = """
+    tbxt = """
     The sun rises in the east.
     The sun sets in the west.
     The moon is bright tonight.
@@ -39,11 +42,8 @@ def ringdingdingding():
     Sebastian, DU BIST WELTMEISTER!
     """
     
-    text_model = markovify.Text(text)
+    text_model = markovify.Text(tbxt)
 
     new_sentence = text_model.make_sentence()
-    print(f"Generated sentence: {new_sentence}")
-
-
-    short_sentence = text_model.make_sentence(max_chars=20)
-    print(f"Generated short sentence: {short_sentence}")
+    return new_sentence
+    
