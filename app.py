@@ -22,13 +22,13 @@ def login():
         return render_template('main.html', views = pageloads)
     else:
         if pwd == werrr:
-        return redirect(url_for("sister"))
+           return redirect(url_for("sister"))
     else:
         return 'no agartha for you'
     
 
 @app.route('/sister')
-def sheistywearer():
+def sister():
     return 'aishwaya is my sister and she loves to commit CRIMES that are ILLEGAL because she is EVIL and a BAD person. also she is cute.'
 
 
