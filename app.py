@@ -21,8 +21,9 @@ def login():
         pageloads += 1
         return render_template('main.html', views = pageloads)
     else:
-        if pwd == werrr
+        if pwd == werrr:
         return redirect(url_for("sister"))
+    else:
         return 'no agartha for you'
     
 
