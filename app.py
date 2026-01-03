@@ -31,7 +31,7 @@ def sister():
 
 @app.route('/impala')
 def ringdingdingding():
-    tbxt = """
+    text = """
     The sun rises in the east.
     The sun sets in the west.
     The moon is bright tonight.
@@ -40,7 +40,8 @@ def ringdingdingding():
     Sebastian, DU BIST WELTMEISTER!
     """
     
-    text_model = markovify.Text(tbxt)
+    text_model = markovify.Text(text)
 
     new_sentence = text_model.make_sentence()
-    return new_sentence
+    return 'new_sentence'
+    
