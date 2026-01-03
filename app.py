@@ -43,5 +43,7 @@ def ringdingdingding():
     text_model = markovify.Text(text)
 
     new_sentence = text_model.make_sentence()
-    return 'new_sentence'
+    return (text)
+    return (new_sentence)
+    
     
