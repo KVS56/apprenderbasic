@@ -44,9 +44,9 @@ def ringdingdingding():
 
     see3e = "sentence grazie no schadenfreude"
 
-    new_sentnce = text_model.make_sentence()
+    new_senetnce = text_model.make_sentence()
     return (text)
-    return (new_sentnce)
+    return (new_sentence)
     return (see3e)
     
     
